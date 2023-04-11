@@ -3,14 +3,15 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import heroBcg from "../assets/hero-bcg.jpeg";
 import heroBcg2 from "../assets/hero-bcg-2.jpeg";
+// import heroBcg from "../assets/hero-bcg.svg";
 
 const Hero = () => {
   return (
     <Wrapper className="section-center">
       <article className="content">
         <h1>
-          design your <br />
-          comfort zone
+          Sneakers <br />
+          for the trends
         </h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore,
@@ -79,16 +80,16 @@ const Wrapper = styled.section`
       transform: translateX(-50%);
       border-radius: var(--radius);
     }
-    .img-container::before {
-      content: "";
-      position: absolute;
-      width: 10%;
-      height: 80%;
-      background: var(--clr-primary-9);
-      bottom: 0%;
-      left: -8%;
-      border-radius: var(--radius);
-    }
+    // .img-container::before {
+    //   content: "";
+    //   position: absolute;
+    //   width: 10%;
+    //   height: 80%;
+    //   background: var(--clr-primary-9);
+    //   bottom: 0%;
+    //   left: -8%;
+    //   border-radius: var(--radius);
+    // }
   }
 `;
 

@@ -63,7 +63,12 @@ const Wrapper = styled.section`
     padding: 2.5rem 2rem;
     border-radius: var(--radius);
     p {
-      color: var(--clr-primary-2);
+      color: var(--clr-grey-1);
+    }
+  }
+  .section-center {
+    p {
+      color: var(--clr-grey-1);
     }
   }
   span {
