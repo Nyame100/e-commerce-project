@@ -14,10 +14,10 @@ const Hero = () => {
           for the trends
         </h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore,
-          repellat quam tempore iure maxime qui labore cupiditate et officia
-          delectus deserunt provident nesciunt ducimus temporibus quos molestiae
-          accusamus harum exercitationem!
+          Lorem ipsum dolor dolor sit amet, consectetur adipisicing elit.
+          Inventore, repellat quam tempore iure maxime qui labore cupiditate et
+          officia delectus deserunt provident nesciunt ducimus temporibus quos
+          molestiae accusamus harum exercitationem!
         </p>
         <Link to="/products" className="btn hero-btn">
           shop now
