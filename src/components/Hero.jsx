@@ -14,10 +14,10 @@ const Hero = () => {
           for the trends
         </h1>
         <p>
-          Lorem ipsum dolor dolor sit amet, consectetur adipisicing elit.
-          Inventore, repellat quam tempore iure maxime qui labore cupiditate et
-          officia delectus deserunt provident nesciunt ducimus temporibus quos
-          molestiae accusamus harum exercitationem!
+          It all starts with a sneakerhead. Yes, it is OK to wear your sneakers
+          everywhere. Sneakerhead. Sneaker addict. Sneaker slave. Call it what
+          you want; there is a certain thrill, like an itch only shoes can
+          scratch, that sneakerheads feel for their passion.
         </p>
         <Link to="/products" className="btn hero-btn">
           shop now

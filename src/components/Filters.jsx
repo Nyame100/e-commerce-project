@@ -193,6 +193,11 @@ const Wrapper = styled.section`
   .colors {
     display: flex;
     align-items: center;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.2rem;
+    align-items: center;
+    margin-bottom: 1rem; */
   }
   .color-btn {
     display: inline-block;
