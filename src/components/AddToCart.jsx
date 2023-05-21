@@ -47,9 +47,22 @@ const AddToCart = ({ product }) => {
                 className={`${
                   mainColor === color ? "color-btn active" : "color-btn"
                 }`}
-                style={{ background: color }}
+                style={
+                  color === "#ffffff"
+                    ? {
+                        border: "1px solid",
+                        borderColor: "#222",
+                        background: "transparent",
+                      }
+                    : { background: color }
+                }
               >
-                {mainColor === color ? <FaCheck /> : null}
+                {mainColor === color && color !== "#ffffff" ? (
+                  <FaCheck />
+                ) : mainColor === color && color === "#ffffff" ? (
+                  <FaCheck style={{ color: "green" }} />
+                ) : null}
+                {/* {mainColor === color ? <FaCheck /> : null} */}
               </button>
             );
           })}

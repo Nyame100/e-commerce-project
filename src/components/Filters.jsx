@@ -85,7 +85,7 @@ const Filters = () => {
           <div className="form-control">
             <h5>Colors</h5>
             <div className="colors">
-              {colors.map((c, index) => {
+              {colors.slice(0, 6).map((c, index) => {
                 if (c === "all") {
                   return (
                     <button
@@ -114,6 +114,37 @@ const Filters = () => {
                 );
               })}
             </div>
+            {/* ... */}
+            <div className="colors">
+              {colors.slice(6, 12).map((c, index) => {
+                return (
+                  <button
+                    key={index}
+                    name="color"
+                    type="button"
+                    onClick={updateFilters}
+                    value={c}
+                    style={
+                      c === "#ffffff"
+                        ? {
+                            border: "1px solid",
+                            borderColor: "#222",
+                            background: "transparent",
+                          }
+                        : { background: c }
+                    }
+                    className={`color-btn ${color === c && "active"}`}
+                  >
+                    {color === c && c !== "#ffffff" ? (
+                      <FaCheck />
+                    ) : color === c && c === "#ffffff" ? (
+                      <FaCheck style={{ color: "green" }} />
+                    ) : null}
+                  </button>
+                );
+              })}
+            </div>
+            {/* ... */}
           </div>
           {/* End of colors */}
           {/* Price */}
@@ -215,6 +246,7 @@ const Wrapper = styled.section`
     svg {
       font-size: 0.5rem;
       color: var(--clr-white);
+      /* color: green; */
     }
   }
   .all-btn {

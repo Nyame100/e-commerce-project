@@ -23,7 +23,18 @@ const CartItem = ({ id, name, color, amount, image, price, size }) => {
         <div>
           <h5 className="name">{name}</h5>
           <p className="color">
-            color: <span style={{ background: color }}></span>
+            color:{" "}
+            <span
+              style={
+                color === "#ffffff"
+                  ? {
+                      border: "1px solid",
+                      borderColor: "#222",
+                      background: "transparent",
+                    }
+                  : { background: color }
+              }
+            ></span>
           </p>
           <p className="color">
             size: <div style={{ background: size }}>{size}EU</div>
